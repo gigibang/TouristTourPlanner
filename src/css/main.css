@@ -19,6 +19,16 @@ html, body, #map-canvas {
 	margin-right: 20px;
 }
 
+#linkSignup {
+	display: table;
+	width: 100%
+}
+
+#linkSignup span {
+	display: table-cell;
+	text-align: center;
+}
+
 
 /****END OF LOGIN PAGE STYLES***/
 /****START OF MAP PAGE STYLES***/
