@@ -10,13 +10,17 @@ html, body, #map-canvas {
 	text-align: center;
 }
 
-.formLogin {
+.formLogin, .formSignUp {
 	max-width: 500px;
 }
 
-.formLogin div {
-	margin-left: 20px;
-	margin-right: 20px;
+.formLogin div, .formSignUp #groupCreateAccountButton {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.formSignUp button {
+	display: inline-block;
 }
 
 #linkSignup {
