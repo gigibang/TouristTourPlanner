@@ -1,0 +1,11 @@
+
+DROP TABLE TP_Accouts; 
+
+CREATE TABLE TP_Accounts 
+(
+FirstName varchar(255),
+LastName varchar(255),
+UserName varchar(255),
+Password varchar(255),
+Email varchar(255)
+ ); 

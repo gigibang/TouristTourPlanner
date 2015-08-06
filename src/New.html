@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+  <title>New</title>
+  <meta name="generator" content="Amaya, see http://www.w3.org/Amaya/" />
+</head>
+
+<body>
+<p>&lt;!DOCTYPE html&gt;</p>
+
+<p>&lt;html&gt;</p>
+
+<p>&lt;head&gt;</p>
+
+<p>&lt;title&gt;Background Changer&lt;/title&gt;</p>
+
+<p></p>
+
+<p>&lt;script type="text/javascript"&gt;</p>
+
+<p>//The loadXMLDoc() function is used to load the XML and XSL files.</p>
+
+<p>//It checks what kind of browser the user has and loads the file.</p>
+
+<p>function loadXMLDoc(dname)</p>
+
+<p>{</p>
+
+<p>//alert("begin");</p>
+
+<p>if (window.XMLHttpRequest)</p>
+
+<p>{</p>
+
+<p>xhttp=new XMLHttpRequest();</p>
+
+<p>}</p>
+
+<p>else</p>
+
+<p>{</p>
+
+<p>xhttp=new ActiveXObject("Microsoft.XMLHTTP");</p>
+
+<p>}</p>
+
+<p>xhttp.open("GET",dname,false);</p>
+
+<p>xhttp.send("");</p>
+
+<p>//alert("completed");</p>
+
+<p>return xhttp.responseXML;</p>
+
+<p>}</p>
+
+<p></p>
+
+<p></p>
+
+<p>function displayResult()</p>
+
+<p>{</p>
+
+<p></p>
+
+<p>xml=loadXMLDoc("catalog.xml");</p>
+
+<p>xsl=loadXMLDoc("category-sale.xsl");</p>
+
+<p>//alert("loaded");</p>
+
+<p>// code for IE</p>
+
+<p>if (window.ActiveXObject)</p>
+
+<p>{</p>
+
+<p>ex=xml.transformNode(xsl);</p>
+
+<p>document.getElementById("categorySaleXsl").innerHTML=ex;</p>
+
+<p>}</p>
+
+<p>// code for Mozilla, Firefox, Opera, etc.</p>
+
+<p>else if (document.implementation &amp;&amp;
+document.implementation.createDocument)</p>
+
+<p>{</p>
+
+<p>xsltProcessor=new XSLTProcessor();</p>
+
+<p>xsltProcessor.importStylesheet(xsl);</p>
+
+<p>resultDocument = xsltProcessor.transformToFragment(xml,document);</p>
+
+<p>document.getElementById("categorySaleXsl").appendChild(resultDocument);</p>
+
+<p>}</p>
+
+<p></p>
+
+<p>xml=loadXMLDoc("XMLBGimagePlaying.xml);</p>
+
+<p>xsl=loadXMLDoc("promotion.xsl");</p>
+
+<p>//alert("secondja");</p>
+
+<p>// code for IE</p>
+
+<p>if (window.ActiveXObject)</p>
+
+<p>{</p>
+
+<p>ex=xml.transformNode(xsl);</p>
+
+<p>document.getElementById("PromotionXsl").innerHTML=ex;</p>
+
+<p>}</p>
+
+<p>// code for Mozilla, Firefox, Opera, etc.</p>
+
+<p>else if (document.implementation &amp;&amp;
+document.implementation.createDocument)</p>
+
+<p>{</p>
+
+<p>xsltProcessor=new XSLTProcessor();</p>
+
+<p>xsltProcessor.importStylesheet(xsl);</p>
+
+<p>resultDocument = xsltProcessor.transformToFragment(xml,document);</p>
+
+<p>document.getElementById("PromotionXsl").appendChild(resultDocument);</p>
+
+<p>}</p>
+
+<p></p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>&lt;/script&gt;</p>
+
+<p>&lt;/head&gt;</p>
+
+<p>&lt;body onload="displayResult()"&gt;</p>
+
+<p>&lt;p&gt; Select your location &lt;/p&gt;</p>
+
+<p>&lt;select&gt;</p>
+
+<p>&lt;option value="Melbourne"&gt;Melbourne&lt;/option&gt;</p>
+
+<p>&lt;/select&gt; </p>
+
+<p>&lt;/p&gt;</p>
+
+<p>&lt;/body&gt;</p>
+
+<p>&lt;/html&gt; </p>
+</body>
+</html>
