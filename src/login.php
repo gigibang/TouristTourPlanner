@@ -35,7 +35,7 @@ require_once('login-php.php');
 			</div>
             </form>
 			<div class="form-group">
-				<a href="signup.html" id="linkSignup"><span>Don't have an account yet? Click here to create one!</span></a>
+				<a href="signup.php" id="linkSignup"><span>Don't have an account yet? Click here to create one!</span></a>
 			</div>
 			<div class="form-group">
 				<a href="map.php" id="linkLoginGuest"><span>Click here to login as a guest.</span></a>
