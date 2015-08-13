@@ -17,7 +17,20 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 		<!--START body html content-->
-		<div id="map-canvas"></div>
+		<div class="header">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#">Planner</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="contentWrapper">
+			<div class="content">
+				<div id="map-canvas"></div>
+			</div>
+		</div>
 		<!--END body html content-->
 		<!--jQuery with offline backup if needed-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
