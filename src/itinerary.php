@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Map - Planner</title>
+		<title>Itinerary - Planner</title>
         <meta name="description" content="">
 		<link rel="stylesheet" href="css/normalize.css">
 		<!--Bootstrap -->
@@ -31,8 +31,8 @@
 					</div><!--/.navbar-header-->
 					<div id="navbar" class="navbar-collapse collapse">
 						<ul class="nav navbar-nav">
-						<li class="active"><a href="./map.php">Map</a></li>
-						<li class="dropdown">
+						<li><a href="./map.php">Map</a></li>
+						<li class="dropdown active">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Itinerary <span class="caret"></span></a>
 							<ul class="dropdown-menu">
 							<li><a href="./itinerary.php">View</a></li>
@@ -52,11 +52,6 @@
 				</div>
 			</nav>
 		</div><!--/.header-->
-		<div class="contentWrapper">
-			<div class="content">
-				<div id="map-canvas"></div>
-			</div>
-		</div>
 		<!--END body html content-->
 		<!--jQuery with offline backup if needed-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

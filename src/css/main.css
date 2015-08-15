@@ -23,7 +23,7 @@ body {
 .contentWrapper {
 	left: 0;
 	top: 50px;
-	right: 0;
+	right: 300px;
 	position: absolute;
 	bottom: 0;
 }
