@@ -28,7 +28,7 @@ if($UserName!=NULL)
 	}
 	if($usernameCorrect==false)
 	{
-		echo "<script type='text/javascript'>alert(\"Incorrect Username\");</script>";
+		 header("location:loginhelp.php");
 	}
 }
 if($Password!=NULL &&$usernameCorrect==true)
@@ -42,14 +42,16 @@ if($Password!=NULL &&$usernameCorrect==true)
 		$PasswordCheck=oci_result($stsm, 'PASSWORD');
 		if($Password != $PasswordCheck)
 		{
-			echo "<script type='text/javascript'>alert(\"Incorrect Password\");</script>";
+			 header("location:loginhelp.php");
 		}
 			
 		else
 		{
-			//login 
-			$_SESSION['Login'] = $UserName;
-			echo "<script type='text/javascript'>alert(\"You are logged in\");</script>";
+			session_register("USERNAME");
+ session_register("PASSWORD"); 
+ header("location:map.php");
+ 
+
 		}
 	}
 }
