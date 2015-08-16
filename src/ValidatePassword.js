@@ -1,8 +1,8 @@
-function ValidateUserName(str)
+function ValidatePassword(str)
 {
 if (str.length==0)
   {
-  document.getElementById("UserNameError").innerHTML="***ERROR: This field cannot be left blank***";
+  document.getElementById("PasswordError").innerHTML="***ERROR: This field cannot be left blank***";
   return;
   }
 if (window.XMLHttpRequest)
@@ -17,7 +17,7 @@ xmlhttp.onreadystatechange=function()
   {
   if (xmlhttp.readyState==4 && xmlhttp.status==200)
     {
-    document.getElementById("UserNameError").innerHTML=xmlhttp.responseText;
+    document.getElementById("PasswordError").innerHTML=xmlhttp.responseText;
    
     }
   }
