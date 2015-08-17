@@ -20,21 +20,10 @@ body {
 	height: 50px;
 }
 
-.contentWrapper {
-	left: 0;
-	top: 50px;
-	right: 300px;
-	position: absolute;
-	bottom: 0;
-}
-
-.content {
-	top: 1px;
-	bottom: 0px;
-	overflow: auto;
-	position: absolute;
-	left: 0;
-	right: 0;
+.errorMessage {
+	color: red;
+    font-weight: bold;
+    font-size: 0.9em;
 }
 
 /****START OF LOGIN PAGE STYLES***/
@@ -78,6 +67,31 @@ body {
 	padding: 5px;
 	border: 1px solid #999;
 	font-family: Roboto;  /* added by shang */
+}
+
+.mapWrapper {
+	left: 0;
+	top: 50px;
+	right: 300px;
+	position: absolute;
+	bottom: 0;
+}
+
+.rightPanel {
+	top: 50px;
+	right: 0;
+	position: absolute;
+	bottom: 0;
+	width: 300px;
+}
+
+.content {
+	top: 1px;
+	bottom: 0px;
+	overflow: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
 }
 
 /****END OF MAP PAGE STYLES***/

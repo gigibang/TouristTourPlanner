@@ -52,10 +52,13 @@
 				</div>
 			</nav>
 		</div><!--/.header-->
-		<div class="contentWrapper">
+		<div class="mapWrapper">
 			<div class="content">
 				<div id="map-canvas"></div>
 			</div>
+		</div>
+		<div class="rightPanel">
+			
 		</div>
 		<!--END body html content-->
 		<!--jQuery with offline backup if needed-->
