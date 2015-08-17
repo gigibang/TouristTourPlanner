@@ -46,7 +46,17 @@
 						</li>
 					  </ul>
 					  <ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Profile<span class="sr-only">(current)</span></a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hi, Dylan <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">View Profile</a></li>
+								<li><a href="#">Saved Routes</a></li>
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-header">Account</li>
+								<li><a href="#">Settings</a></li>
+								<li><a href="#">Log Out</a></li>
+							</ul>
+						</li>
 					  </ul>
 					</div><!--/.nav-collapse -->
 				</div>
