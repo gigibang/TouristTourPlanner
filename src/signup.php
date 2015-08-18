@@ -27,47 +27,72 @@ require_once('createAccountPhp.php');
 		<!--START body html content-->
 		<h1 class="heading">Create a Planner Account</h1>
 		<div class="center-block formSignUp" class="">
-			<!--Left column -->
-			<div class="col-sm-6 formSignUpLeft">
             <form name="register" method="Post"action="?">
-				<div class="form-group" id="groupFirstName">
-					<label for="signUpFirstName">First Name:</label>
-					<input type="text" class="form-control" id="signUpFirstName" placeholder="First Name" name="FirstName"  onblur = "ValidateFirstName(this.value)"></input>
-                    <span id = "FirstnameError" class = "errorMessage"></span>
+				<!--First row-->
+				<div class="formSignUpRow col-sm-12">
+					<div class="col-sm-6 formSignUpLeft">
+						<div class="form-group" id="groupFirstName">
+							<label for="signUpFirstName">First Name:</label>
+							<input type="text" class="form-control" id="signUpFirstName" placeholder="First Name" name="FirstName"  onblur = "ValidateFirstName(this.value)"></input>
+							<span id = "FirstnameError" class = "errorMessage"></span>
+						</div>
+					</div>
+					<!--End left column -->
+					<!--Right column -->
+					<div class="col-sm-6 formSignUpRight">
+						<div class="form-group" id="groupLastName">
+							<label for="signUpLastName">Last Name:</label>
+							<input type="text" class="form-control" id="signUpLastName" placeholder="Last Name" name="LastName"  onblur = "ValidateLastName(this.value)"></input>
+							<span id = "LastnameError" class = "errorMessage"></span>
+						</div>
+					</div>
+					<!--End right column -->
 				</div>
-				<div class="form-group" id="groupUsername">
-					<label for="signUpUsername">Username:</label>
-					<input type="text" class="form-control" id="signUpUsername" placeholder="Username"  name="UserName"onblur="ValidateUserName(this.value)"></input>
-                    <span id = "UserNameError" class = "errorMessage"></span>
+				<!--End first row-->
+				<!--Second row-->
+				<div class="formSignUpRow col-sm-12">
+					<div class="col-sm-6 formSignUpLeft">
+						<div class="form-group" id="groupUsername">
+							<label for="signUpUsername">Username:</label>
+							<input type="text" class="form-control" id="signUpUsername" placeholder="Username"  name="UserName"onblur="ValidateUserName(this.value)"></input>
+							<span id = "UserNameError" class = "errorMessage"></span>
+						</div>
+					</div>
+					<!--End left column -->
+					<!--Right column -->
+					<div class="col-sm-6 formSignUpRight">
+						<div class="form-group" id="groupEmailAddress">
+							<label for="signUpEmailAddress">Email Address:</label>
+							<input type="text" class="form-control" id="signUpEmailAddress" placeholder="Email Address" name="Email"onblur = "ValidateEmail(this.value)"></input>
+							<span id = "EmailError" class = "errorMessage"></span>
+						</div>
+					</div>
+					<!--End right column -->
 				</div>
-				<div class="form-group" id="groupPassword">
-					<label for="signUpPassword">Password:</label>
-					<input type="text" class="form-control" id="signUpPassword" placeholder="Password" name="Password" onblur="ValidatePassword(this.value)"></input>
-                    <span id = "PasswordError" class = "errorMessage"></span>
+				<!--End second row-->
+				<!--Third row-->
+				<div class="formSignUpRow col-sm-12">
+					<div class="col-sm-6 formSignUpLeft">
+						<div class="form-group" id="groupPassword">
+							<label for="signUpPassword">Password:</label>
+							<input type="text" class="form-control" id="signUpPassword" placeholder="Password" name="Password" onblur="ValidatePassword(this.value)"></input>
+							<span id = "PasswordError" class = "errorMessage"></span>
+						</div>
+					</div>
+					<!--End left column -->
+					<!--Right column -->
+					<div class="col-sm-6 formSignUpRight">
+						<div class="form-group" id="groupUsername">
+							<label for="signUpUsername">Retype Password:</label>
+							<input type="text" class="form-control" id="signUpPassword" placeholder="Retype Password"></input>
+						</div>
+					</div>
+					<!--End right column -->
+					<div class="form-group" id="groupCreateAccountButton">
+						<button class="btn btn-success btn-block" type="submit">Create Account</button>
+					</div>
 				</div>
-			</div>
-			<!--End left column -->
-			<!--Right column -->
-			<div class="col-sm-6 formSignUpRight">
-				<div class="form-group" id="groupLastName">
-					<label for="signUpLastName">Last Name:</label>
-					<input type="text" class="form-control" id="signUpLastName" placeholder="Last Name" name="LastName"  onblur = "ValidateLastName(this.value)"></input>
-                    <span id = "LastnameError" class = "errorMessage"></span>
-				</div>
-				<div class="form-group" id="groupEmailAddress">
-					<label for="signUpEmailAddress">Email Address:</label>
-					<input type="text" class="form-control" id="signUpEmailAddress" placeholder="Email Address" name="Email"onblur = "ValidateEmail(this.value)"></input>
-                    <span id = "EmailError" class = "errorMessage"></span>
-				</div>
-				<div class="form-group" id="groupUsername">
-					<label for="signUpUsername">Retype Password:</label>
-					<input type="text" class="form-control" id="signUpPassword" placeholder="Retype Password"></input>
-				</div>
-			</div>
-			<!--End right column -->
-			<div class="form-group" id="groupCreateAccountButton">
-				<button class="btn btn-success btn-block" type="submit">Create Account</button>
-			</div>
+				<!--End third row-->
             </form>
 			<div class="form-group">
 				<a href="login.php" id="linkSignup"><span>Already have an account? Click here to login!</span></a>
