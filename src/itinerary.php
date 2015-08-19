@@ -7,8 +7,10 @@
 		<title>Itinerary - Planner</title>
         <meta name="description" content="">
 		<link rel="stylesheet" href="css/normalize.css">
-		<!--Bootstrap -->
+		<!--Bootstrap & Font Awesome-->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<!-- Custom CSS -->
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 	</head>
@@ -31,33 +33,33 @@
 					</div><!--/.navbar-header-->
 					<div id="navbar" class="navbar-collapse collapse">
 						<ul class="nav navbar-nav">
-						<li><a href="./map.php">Map</a></li>
-						<li class="dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Itinerary <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-							<li><a href="./itinerary.php">View</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li role="separator" class="divider"></li>
-							<li class="dropdown-header">Nav header</li>
-							<li><a href="#">Separated link</a></li>
-							<li><a href="#">One more separated link</a></li>
-						  </ul>
-						</li>
-					  </ul>
-					  <ul class="nav navbar-nav navbar-right">
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hi, Dylan <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">View Profile</a></li>
-								<li><a href="#">Saved Routes</a></li>
-								<li role="separator" class="divider"></li>
-								<li class="dropdown-header">Account</li>
-								<li><a href="#">Settings</a></li>
-								<li><a href="#">Log Out</a></li>
-							</ul>
-						</li>
-					  </ul>
+							<li><a href="./map.php">Map</a></li>
+							<li class="dropdown active">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Itinerary <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="./itinerary.php">View</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li role="separator" class="divider"></li>
+									<li class="dropdown-header">Nav header</li>
+									<li><a href="#">Separated link</a></li>
+									<li><a href="#">One more separated link</a></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hi, Dylan <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">View Profile</a></li>
+									<li><a href="#">Saved Routes</a></li>
+									<li role="separator" class="divider"></li>
+									<li class="dropdown-header">Account</li>
+									<li><a href="#">Settings</a></li>
+								</ul>
+							</li>
+							<li><a href="#"><i class="fa fa-fw fa-sign-out"></i>&nbsp;Log Out</a></li>
+						</ul>
 					</div><!--/.nav-collapse -->
 				</div>
 			</nav>
