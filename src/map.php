@@ -70,7 +70,12 @@
 			</div>
 		</div>
 		<div class="rightPanel">
-			
+			<div class="form-group">
+				<input type="text" class="form-control" name="Start" id="start" placeholder="Where are you travelling from?"></input>
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control" name="End" id="end" placeholder="Where are you travelling to?"></input>
+			</div>
 		</div>
 		<!--END body html content-->
 		<!--jQuery with offline backup if needed-->
@@ -78,6 +83,6 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
 		<script src="js/vendor/bootstrap.min.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
-		<script type="text/javascript" src="js/scripts.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
 	</body>
 </html>
