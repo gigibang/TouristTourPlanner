@@ -10,12 +10,33 @@ var mode;
 var transit_flag=false;
 	
 function initialize() {
-  var mapOptions = {
-    center: new google.maps.LatLng(-37.8136, 144.9631),
-    zoom: 12
-  };
-  map = new google.maps.Map(document.getElementById('map-canvas'),
-    mapOptions);
+	var mapOptions = {
+		center: new google.maps.LatLng(-37.8136, 144.9631),
+		zoom: 12
+	};
+	map = new google.maps.Map(document.getElementById('map-canvas'),
+		mapOptions);
+		
+	// new direction service.
+	directionsDisplay = new google.maps.DirectionsRenderer();
+	directionsDisplay.setMap(map);
+	
+	// Changes the symbols on the map to focus on transit.
+	var transitLayer = new google.maps.TransitLayer();
+	transitLayer.setMap(map);
+		
+	var input_start = /** @type {HTMLInputElement} */(
+		document.getElementById('start'));
+	  
+	var input_end = /** @type {HTMLInputElement} */(
+		document.getElementById('end'));
+		
+	var autocomplete_start = new google.maps.places.Autocomplete(input_start);
+	var autocomplete_end = new google.maps.places.Autocomplete(input_end);
+  
+	autocomplete_start.bindTo('bounds', map);
+	autocomplete_end.bindTo('bounds', map); 
+	
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
