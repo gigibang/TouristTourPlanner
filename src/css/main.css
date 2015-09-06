@@ -56,6 +56,7 @@ body {
 /**** START OF LOGIN PAGE STYLES ***/
 .heading {
 	text-align: center;
+	color: #6767DA;
 }
 
 .formLogin, .formSignUp {
@@ -71,12 +72,12 @@ body {
 	display: inline-block;
 }
 
-#linkSignup, #linkLoginGuest {
+.formLogin a, .formSignUp a {
 	display: table;
 	width: 100%
 }
 
-#linkSignup span, #linkLoginGuest span {
+.formLogin a span, .formSignUp a span {
 	display: table-cell;
 	text-align: center;
 }

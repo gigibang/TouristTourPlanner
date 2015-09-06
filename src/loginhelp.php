@@ -7,7 +7,7 @@ require_once('login-php.php');
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Sign in - Planner</title>
+		<title>Sign in - Traveler</title>
         <meta name="description" content="">
 		<link rel="stylesheet" href="css/normalize.css">
 		<!--Bootstrap -->
@@ -20,7 +20,7 @@ require_once('login-php.php');
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 		<!--START body html content-->
-		<h1 class="heading">Loging in help</h1>
+		<h1 class="heading">Logging in help</h1>
 		<div class="center-block formLogin">
 			<p> Your username or password was incorrect. Please make sure you are entering your data that relates to the Tour Journey Planner website, some hints are to check the spelling of your username and password and ensure that your not using incorrect capitlization. </p>
 <div class="form-group">
