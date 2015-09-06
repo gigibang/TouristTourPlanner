@@ -12,6 +12,8 @@ body {
 	outline: 0;
 }
 
+/**** START OF COMMON STYLES ***/
+
 .header {
 	top: 0;
 	right: 0;
@@ -26,7 +28,32 @@ body {
     font-size: 0.9em;
 }
 
-/****START OF LOGIN PAGE STYLES***/
+/* START Navbar styles */
+.navbar {
+	background-color: #6767DA;
+}
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
+	color: #FFFFFF;
+}
+
+.navbar-default .navbar-brand {
+    color: #FFFFFF;
+}
+
+/* Mobile hamburger menu button */
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFFFFF;
+}
+
+/* Mobile hamburger menu button */
+.navbar-default .navbar-toggle:focus .icon-bar, .navbar-default .navbar-toggle:hover .icon-bar{
+    background-color: #888888;
+}
+/* END navbar styles */
+
+/**** END OF COMMON STYLES ***/
+/**** START OF LOGIN PAGE STYLES ***/
 .heading {
 	text-align: center;
 }
@@ -54,8 +81,8 @@ body {
 	text-align: center;
 }
 
-/****END OF LOGIN PAGE STYLES***/
-/****START OF MAP PAGE STYLES***/
+/**** END OF LOGIN PAGE STYLES ***/
+/**** START OF MAP PAGE STYLES ***/
 	  
 #panel { /* not used ? */
 	position: absolute;
@@ -95,4 +122,4 @@ body {
 	right: 0;
 }
 
-/****END OF MAP PAGE STYLES***/
+/**** END OF MAP PAGE STYLES ***/
