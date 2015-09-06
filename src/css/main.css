@@ -37,7 +37,7 @@ body {
 	color: #FFFFFF;
 }
 
-.navbar-default .navbar-brand {
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
     color: #FFFFFF;
 }
 
