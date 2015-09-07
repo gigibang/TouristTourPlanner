@@ -1,0 +1,126 @@
+html, body, #map-canvas {
+	height: 100%;
+	/*font-family: Roboto;*/  /* added by shang */
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	border: 0;
+	outline: 0;
+}
+
+/**** START OF COMMON STYLES ***/
+
+.header {
+	top: 0;
+	right: 0;
+	left: 0;
+	position: absolute;
+	height: 50px;
+}
+
+.errorMessage {
+	color: red;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+/* START Navbar styles */
+.navbar {
+	background-color: #6767DA;
+}
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
+	color: #FFFFFF;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
+    color: #FFFFFF;
+}
+
+/* Mobile hamburger menu button */
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFFFFF;
+}
+
+/* Mobile hamburger menu button */
+.navbar-default .navbar-toggle:focus .icon-bar, .navbar-default .navbar-toggle:hover .icon-bar{
+    background-color: #888888;
+}
+/* END navbar styles */
+
+/**** END OF COMMON STYLES ***/
+/**** START OF LOGIN PAGE STYLES ***/
+.heading {
+	text-align: center;
+	color: #6767DA;
+}
+
+.formLogin, .formSignUp {
+	max-width: 500px;
+}
+
+.formLogin div, .formSignUp #groupCreateAccountButton {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.formSignUp button {
+	display: inline-block;
+}
+
+.formLogin a, .formSignUp a {
+	display: table;
+	width: 100%
+}
+
+.formLogin a span, .formSignUp a span {
+	display: table-cell;
+	text-align: center;
+}
+
+/**** END OF LOGIN PAGE STYLES ***/
+/**** START OF MAP PAGE STYLES ***/
+	  
+#panel { /* not used ? */
+	position: absolute;
+	top: 5px;
+	left: 50%;
+	margin-left: -180px;
+	z-index: 5;
+	background-color: #fff;
+	padding: 5px;
+	border: 1px solid #999;
+	font-family: Roboto;  /* added by shang */
+}
+
+.mapWrapper {
+	left: 0;
+	top: 50px;
+	right: 300px;
+	position: absolute;
+	bottom: 0;
+}
+
+.rightPanel {
+	top: 50px;
+	right: 0;
+	position: absolute;
+	bottom: 0;
+	width: 300px;
+	padding: 20px 20px 0px;
+}
+
+.content {
+	top: 1px;
+	bottom: 0px;
+	overflow: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+/**** END OF MAP PAGE STYLES ***/
