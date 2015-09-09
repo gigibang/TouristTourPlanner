@@ -71,11 +71,13 @@
 		</div>
 		<div class="rightPanel">
 			<div class="form-group">
+			<form action="" method="get" id="from_to_form">
 				<input type="text" class="form-control" name="Start" id="start" placeholder="Where are you travelling from?"></input>
-			</div>
-			<div class="form-group">
+				</br>
 				<input type="text" class="form-control" name="End" id="end" placeholder="Where are you travelling to?"></input>
+				</form>
 			</div>
+			<button type="submit" form="from_to_form" value="Submit">Let's Go</button>
 		</div>
 		<!--END body html content-->
 		<!--jQuery with offline backup if needed-->
