@@ -1,6 +1,6 @@
-html, body, #map-canvas {
+html, body,#map-canvas {
 	height: 100%;
-	/*font-family: Roboto;*/  /* added by shang */
+	/*font-family: Roboto;*/ 
 	margin: 0px;
 	padding: 0px;
 }
@@ -28,15 +28,27 @@ body {
     font-size: 0.9em;
 }
 
+.btn-main {
+	background-color: #6767DA;
+	color: #FFFFFF;
+}
+
+.btn-main:hover, .btn-main:focus {
+	background-color: #5454D2;
+	color: #FFFFFF
+}
+
 /* START Navbar styles */
 .navbar {
 	background-color: #6767DA;
 }
 
+/* Navbar desktop tabs */
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
 	color: #FFFFFF;
 }
 
+/* Navbar heading */
 .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
     color: #FFFFFF;
 }
@@ -105,6 +117,14 @@ body {
 	bottom: 0;
 }
 
+.btnBackToForm {
+	display: none;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	z-index:1000;
+}
+
 .rightPanel {
 	top: 50px;
 	right: 0;
@@ -112,6 +132,18 @@ body {
 	bottom: 0;
 	width: 300px;
 	padding: 20px 20px 0px;
+	z-index: 99;
+}
+.newRightPanel {
+	top: 30px;
+	right: 5px;
+	position: absolute;
+	bottom: 0px;
+	width: 300px;
+	padding: 10px 10px 0px 0px;
+	z-index: 99;
+	height:100%;
+	text-align: center;
 }
 
 .content {
@@ -122,5 +154,237 @@ body {
 	left: 0;
 	right: 0;
 }
+.controls {
+  margin-top: 10px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 32px;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#pac-input {
+  background-color: #BC6464;
+  font-size: 12px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 90%;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+
+.pac-container {
+  font-family: Roboto;
+}
+
+#type-selector {
+  color: #fff;
+  background-color: #4d90fe;
+  padding: 5px 11px 0px 11px;
+}
+
+#type-selector label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+
+
+
+
 
 /**** END OF MAP PAGE STYLES ***/
+/*** START MOBILE STYLES ***/
+@media (max-width: 768px) {
+	
+	.rightPanel, .mapWrapper , .newRightpanel{
+		width: 100%;
+	}
+	
+	.showActive {
+		display: block;
+	}
+	
+	.hideInactive {
+		display: none;
+	}
+	
+	.btnBackToForm {
+		display: inline;
+	}
+	
+	/* Navbar mobile dropdown elements */
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+		color: #FFFFFF;
+	}
+	
+	.dropdown-header {
+		color: #000000;
+	}
+}
+/*** END MOBILE STYLES ***/
+
+/*** start range slider style***/
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+
+
+.range {
+    display: table;
+    position: relative;
+    width: 130px;
+    margin-top: 0px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 0px 1px #6095BC inset;
+    cursor: pointer;
+}
+
+.range input[type="range"] {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    -ms-appearance: none !important;
+    -o-appearance: none !important;
+    appearance: none !important;
+
+    display: table-cell;
+    width: 100%;
+    background-color: transparent;
+    height: 25px;
+    cursor: pointer;
+}
+.range input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    -ms-appearance: none !important;
+    -o-appearance: none !important;
+    appearance: none !important;
+
+    width: 11px;
+    height: 25px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0px;
+    background-color: rgb(153, 153, 153);
+}
+
+.range input[type="range"]::-moz-slider-thumb {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    -ms-appearance: none !important;
+    -o-appearance: none !important;
+    appearance: none !important;
+    
+    width: 11px;
+    height: 25px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0px;
+    background-color: rgb(153, 153, 153);
+}
+
+.range output {
+    display: table-cell;
+    padding: 3px 5px 2px;
+    min-width: 40px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(153, 153, 153);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+}
+.range input[type="range"] {
+    outline: none;
+}
+
+.range.range-primary input[type="range"]::-webkit-slider-thumb {
+    background-color: rgb(66, 139, 202);
+}
+.range.range-primary input[type="range"]::-moz-slider-thumb {
+    background-color: rgb(66, 139, 202);
+}
+.range.range-primary output {
+    background-color: rgba(0, 0, 0, 0);
+}
+.range.range-primary input[type="range"] {
+    outline-color: rgb(66, 139, 202);
+}
+
+.range.range-success input[type="range"]::-webkit-slider-thumb {
+    background-color: rgb(92, 184, 92);
+}
+.range.range-success input[type="range"]::-moz-slider-thumb {
+    background-color: rgb(92, 184, 92);
+}
+.range.range-success output {
+    background-color: rgb(92, 184, 92);
+}
+.range.range-success input[type="range"] {
+    outline-color: rgb(92, 184, 92);
+}
+
+.range.range-info input[type="range"]::-webkit-slider-thumb {
+    background-color: rgb(91, 192, 222);
+}
+.range.range-info input[type="range"]::-moz-slider-thumb {
+    background-color: rgb(91, 192, 222);
+}
+.range.range-info output {
+    background-color: rgb(91, 192, 222);
+}
+.range.range-info input[type="range"] {
+    outline-color: rgb(91, 192, 222);
+}
+
+.range.range-warning input[type="range"]::-webkit-slider-thumb {
+    background-color: rgb(240, 173, 78);
+}
+.range.range-warning input[type="range"]::-moz-slider-thumb {
+    background-color: rgb(240, 173, 78);
+}
+.range.range-warning output {
+    background-color: rgb(240, 173, 78);
+}
+.range.range-warning input[type="range"] {
+    outline-color: rgb(240, 173, 78);
+}
+
+.range.range-danger input[type="range"]::-webkit-slider-thumb {
+    background-color: rgb(217, 83, 79);
+}
+.range.range-danger input[type="range"]::-moz-slider-thumb {
+    background-color: rgb(217, 83, 79);
+}
+.range.range-danger output {
+    background-color: rgb(217, 83, 79);
+}
+.range.range-danger input[type="range"] {
+    outline-color: rgb(217, 83, 79);
+}
+/*** end range slider style ***/
